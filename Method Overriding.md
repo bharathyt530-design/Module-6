@@ -14,7 +14,31 @@ To write a Python program that demonstrates class inheritance by creating a pare
 7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
 ## 💻 PROGRAM:
+```
+class Fish:
+    def type(self):
+        print("fish")
 
+class Shark(Fish):
+    def type(self):
+        print("shark")
+
+obj_goldfish = Fish()
+obj_hammerhead = Shark()
+
+print("Output:")
+for obj in [obj_goldfish, obj_hammerhead]:
+    obj.type()
+
+Result = ["fish", "shark"]
+
+
+
+```
 ## OUTPUT
+<img width="1233" height="550" alt="image" src="https://github.com/user-attachments/assets/42524ccb-3eda-48a0-a4b8-21e187807aad" />
+
+
 
 ## RESULT
+The program successfully demonstrates class inheritance by creating a parent class Fish with a method type, and a child class Shark that overrides the type method.
